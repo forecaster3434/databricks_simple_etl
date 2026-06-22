@@ -9,37 +9,31 @@ fetching the kaggle api for truncate-insert load of ufc fighters performance sta
 transforming it following medallion architecture 
 
 reporting using bubilt in databricks dashboard ui fucntionality 
+## 🚀 How to Connect This Repository to Databricks (No Tokens Required)
 
+Databricks AI/BI Dashboards are version-controlled inside this repository. Follow these steps to authorize Databricks using your GitHub account login.
 
-## 🚀 How to Connect This Repository to Databricks
+### Step 1: Install the Databricks App in GitHub
+1. Go directly to the official [Databricks GitHub App Page](https://github.com) (or your company's dedicated Databricks GitHub enterprise application).
+2. Click **Install**.
+3. Select your GitHub account or Organization.
+4. Choose **All repositories** or select **Only select repositories** (and check this specific dashboard repo).
+5. Click **Install & Authorize**.
 
-Databricks AI/BI Dashboards are version-controlled inside this repository. Follow these steps to clone this repo into your Databricks workspace and start developing.
-
-### Step 1: Generate a Personal Access Token (PAT)
-Databricks needs permission to access your Git provider. 
-1. Go to your Git provider settings (e.g., GitHub, GitLab, Azure DevOps).
-2. Generate a new **Personal Access Token (PAT)** or SSH key.
-   * *For GitHub:* Go to **Settings** > **Developer Settings** > **Personal Access Tokens (Tokens classic)**.
-   * Select **repo** scopes/permissions.
-
-### Step 2: Link Your Git Account to Databricks
+### Step 2: Link Your GitHub Account in Databricks
 1. Log into your **Databricks Workspace**.
 2. Click your **User Profile** icon in the bottom-left corner and select **Settings**.
 3. Navigate to the **Linked accounts** tab.
-4. Under **Git credentials**:
-   * Select your **Git provider**.
-   * Enter your Git provider **username or email**.
-   * Paste the **Personal Access Token (PAT)** you generated in Step 1.
-5. Click **Save**.
+4. Click **Add Git credential**.
+5. Change the provider to **GitHub**.
+6. Select **Link Git account** (OAuth login) and click **Link**.
+7. A GitHub window will pop up. Click **Authorize Databricks** to finalize the link.
 
 ### Step 3: Clone the Repository into Databricks
 1. In the Databricks sidebar, click on **Workspace**.
 2. Right-click on your user folder (under `Workspace` > `Users` > `your_email@domain.com`) or a shared folder.
 3. Select **Create** > **Git folder**.
-4. In the dialog box, fill in the following:
-   * **Git repository URL:** Paste the HTTPS URL of this repository.
-   * **Git provider:** Select your provider.
-   * **Git folder name:** (Optional) Customize the folder name.
+4. Paste the HTTPS URL of this GitHub repository into the **Git repository URL** box.
 5. Click **Create Git folder**.
 
 ---
