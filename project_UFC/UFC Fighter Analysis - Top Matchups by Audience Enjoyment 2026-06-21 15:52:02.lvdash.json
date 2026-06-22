@@ -1,0 +1,1231 @@
+{
+  "datasets": [
+    {
+      "name": "9b5c94e4",
+      "displayName": "ufc_top_matchups",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.gold.ufc_top_matchups",
+        "dimensions": [
+          {
+            "name": "fight_id",
+            "expr": "source.fight_id",
+            "displayName": "Fight Id"
+          },
+          {
+            "name": "f1_id",
+            "expr": "source.f1_id",
+            "displayName": "F 1 Id"
+          },
+          {
+            "name": "f1_name",
+            "expr": "source.f1_name",
+            "displayName": "F 1 Name"
+          },
+          {
+            "name": "f1_nickname",
+            "expr": "source.f1_nickname",
+            "displayName": "F 1 Nickname"
+          },
+          {
+            "name": "f1_weight",
+            "expr": "source.f1_weight",
+            "displayName": "F 1 Weight"
+          },
+          {
+            "name": "f1_kpi",
+            "expr": "source.f1_kpi",
+            "displayName": "F 1 Kpi"
+          },
+          {
+            "name": "f2_id",
+            "expr": "source.f2_id",
+            "displayName": "F 2 Id"
+          },
+          {
+            "name": "f2_name",
+            "expr": "source.f2_name",
+            "displayName": "F 2 Name"
+          },
+          {
+            "name": "f2_nickname",
+            "expr": "source.f2_nickname",
+            "displayName": "F 2 Nickname"
+          },
+          {
+            "name": "f2_weight",
+            "expr": "source.f2_weight",
+            "displayName": "F 2 Weight"
+          },
+          {
+            "name": "f2_kpi",
+            "expr": "source.f2_kpi",
+            "displayName": "F 2 Kpi"
+          },
+          {
+            "name": "combined_kpi",
+            "expr": "source.combined_kpi",
+            "displayName": "Combined Kpi"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "4dc92317",
+      "displayName": "ufc_fighter_dashboard_metrics",
+      "config": {
+        "version": "1.1",
+        "source": "workspace.gold.ufc_fighter_dashboard_metrics",
+        "dimensions": [
+          {
+            "name": "fighter_id",
+            "expr": "source.fighter_id",
+            "displayName": "Fighter Id"
+          },
+          {
+            "name": "full_name",
+            "expr": "source.full_name",
+            "displayName": "Full Name"
+          },
+          {
+            "name": "record",
+            "expr": "source.record",
+            "displayName": "Record"
+          },
+          {
+            "name": "is_top_14",
+            "expr": "source.is_top_14",
+            "displayName": "Is Top 14"
+          },
+          {
+            "name": "first",
+            "expr": "source.first",
+            "displayName": "First"
+          },
+          {
+            "name": "last",
+            "expr": "source.last",
+            "displayName": "Last"
+          },
+          {
+            "name": "nickname",
+            "expr": "source.nickname",
+            "displayName": "Nickname"
+          },
+          {
+            "name": "height_cm",
+            "expr": "source.height_cm",
+            "displayName": "Height Cm"
+          },
+          {
+            "name": "weight",
+            "expr": "source.weight",
+            "displayName": "Weight"
+          },
+          {
+            "name": "reach",
+            "expr": "source.reach",
+            "displayName": "Reach"
+          },
+          {
+            "name": "stance",
+            "expr": "source.stance",
+            "displayName": "Stance"
+          },
+          {
+            "name": "wins",
+            "expr": "source.wins",
+            "displayName": "Wins"
+          },
+          {
+            "name": "losses",
+            "expr": "source.losses",
+            "displayName": "Losses"
+          },
+          {
+            "name": "draws",
+            "expr": "source.draws",
+            "displayName": "Draws"
+          },
+          {
+            "name": "sig_strikes_landed",
+            "expr": "source.sig_strikes_landed",
+            "displayName": "Sig Strikes Landed"
+          },
+          {
+            "name": "sig_strikes_attempted",
+            "expr": "source.sig_strikes_attempted",
+            "displayName": "Sig Strikes Attempted"
+          },
+          {
+            "name": "takedowns_landed",
+            "expr": "source.takedowns_landed",
+            "displayName": "Takedowns Landed"
+          },
+          {
+            "name": "takedowns_attempted",
+            "expr": "source.takedowns_attempted",
+            "displayName": "Takedowns Attempted"
+          },
+          {
+            "name": "str_landed_per_min",
+            "expr": "source.str_landed_per_min",
+            "displayName": "Str Landed Per Min"
+          },
+          {
+            "name": "str_absorbed_per_min",
+            "expr": "source.str_absorbed_per_min",
+            "displayName": "Str Absorbed Per Min"
+          },
+          {
+            "name": "td_avg_per_15min",
+            "expr": "source.td_avg_per_15min",
+            "displayName": "Td Avg Per 15 Min"
+          },
+          {
+            "name": "sub_avg_per_15min",
+            "expr": "source.sub_avg_per_15min",
+            "displayName": "Sub Avg Per 15 Min"
+          },
+          {
+            "name": "str_defense_pct",
+            "expr": "source.str_defense_pct",
+            "displayName": "Str Defense Pct"
+          },
+          {
+            "name": "td_defense_pct",
+            "expr": "source.td_defense_pct",
+            "displayName": "Td Defense Pct"
+          },
+          {
+            "name": "knockdown_avg",
+            "expr": "source.knockdown_avg",
+            "displayName": "Knockdown Avg"
+          },
+          {
+            "name": "striking_accuracy_pct",
+            "expr": "source.striking_accuracy_pct",
+            "displayName": "Striking Accuracy Pct"
+          },
+          {
+            "name": "takedown_accuracy_pct",
+            "expr": "source.takedown_accuracy_pct",
+            "displayName": "Takedown Accuracy Pct"
+          },
+          {
+            "name": "ko_wins",
+            "expr": "source.ko_wins",
+            "displayName": "Ko Wins"
+          },
+          {
+            "name": "ko_win_percentage",
+            "expr": "source.ko_win_percentage",
+            "displayName": "Ko Win Percentage"
+          },
+          {
+            "name": "dec_wins",
+            "expr": "source.dec_wins",
+            "displayName": "Dec Wins"
+          },
+          {
+            "name": "dec_win_percentage",
+            "expr": "source.dec_win_percentage",
+            "displayName": "Dec Win Percentage"
+          },
+          {
+            "name": "sub_wins",
+            "expr": "source.sub_wins",
+            "displayName": "Sub Wins"
+          },
+          {
+            "name": "sub_win_percentage",
+            "expr": "source.sub_win_percentage",
+            "displayName": "Sub Win Percentage"
+          },
+          {
+            "name": "avg_fight_time_minutes",
+            "expr": "source.avg_fight_time_minutes",
+            "displayName": "Avg Fight Time Minutes"
+          },
+          {
+            "name": "pace_score",
+            "expr": "source.pace_score",
+            "displayName": "Pace Score"
+          },
+          {
+            "name": "power_score",
+            "expr": "source.power_score",
+            "displayName": "Power Score"
+          },
+          {
+            "name": "finish_score",
+            "expr": "source.finish_score",
+            "displayName": "Finish Score"
+          },
+          {
+            "name": "grappling_score",
+            "expr": "source.grappling_score",
+            "displayName": "Grappling Score"
+          },
+          {
+            "name": "audience_enjoyment_kpi",
+            "expr": "source.audience_enjoyment_kpi",
+            "displayName": "Audience Enjoyment Kpi"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    }
+  ],
+  "pages": [
+    {
+      "name": "65edbf99",
+      "displayName": "HOME",
+      "layout": [
+        {
+          "widget": {
+            "name": "header",
+            "multilineTextboxSpec": {
+              "lines": [
+                "## UFC Fighter Analysis: Top 14 by Audience Enjoyment\n",
+                "Discover the most exciting UFC fighters and their optimal matchups based on comprehensive performance metrics including pace, power, finishing ability, and grappling prowess."
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "total_fighters",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "countdistinct(fighter_id)",
+                      "expression": "COUNT(DISTINCT `fighter_id`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Elite Fighters",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "countdistinct(fighter_id)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 2,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "total_matchups",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9b5c94e4",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Optimal Matchups",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 2,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "avg_enjoyment",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "avg(audience_enjoyment_kpi)",
+                      "expression": "AVG(`audience_enjoyment_kpi`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Avg Enjoyment Score",
+                "showTitle": true
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(audience_enjoyment_kpi)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 2,
+            "width": 4,
+            "height": 3
+          }
+        },
+        {
+          "widget": {
+            "name": "top_fighters_bar",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "audience_enjoyment_kpi",
+                      "expression": "`audience_enjoyment_kpi`"
+                    },
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Top 14 Fighters by Audience Enjoyment",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "audience_enjoyment_kpi",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "full_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 5,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "matchups_table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "9b5c94e4",
+                  "fields": [
+                    {
+                      "name": "fight_id",
+                      "expression": "`fight_id`"
+                    },
+                    {
+                      "name": "f1_name",
+                      "expression": "`f1_name`"
+                    },
+                    {
+                      "name": "f1_nickname",
+                      "expression": "`f1_nickname`"
+                    },
+                    {
+                      "name": "f1_kpi",
+                      "expression": "`f1_kpi`"
+                    },
+                    {
+                      "name": "f2_name",
+                      "expression": "`f2_name`"
+                    },
+                    {
+                      "name": "f2_nickname",
+                      "expression": "`f2_nickname`"
+                    },
+                    {
+                      "name": "f2_kpi",
+                      "expression": "`f2_kpi`"
+                    },
+                    {
+                      "name": "combined_kpi",
+                      "expression": "`combined_kpi`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Optimal Fight Matchups",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "fight_id"
+                  },
+                  {
+                    "fieldName": "f1_name"
+                  },
+                  {
+                    "fieldName": "f1_nickname"
+                  },
+                  {
+                    "fieldName": "f1_kpi"
+                  },
+                  {
+                    "fieldName": "f2_name"
+                  },
+                  {
+                    "fieldName": "f2_nickname"
+                  },
+                  {
+                    "fieldName": "f2_kpi"
+                  },
+                  {
+                    "fieldName": "combined_kpi"
+                  }
+                ]
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 5,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "score_breakdown",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "pace_score",
+                      "expression": "`pace_score`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Performance Metrics Breakdown",
+                "showTitle": true
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "full_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "pace_score",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 11,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "fighter_details",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "nickname",
+                      "expression": "`nickname`"
+                    },
+                    {
+                      "name": "record",
+                      "expression": "`record`"
+                    },
+                    {
+                      "name": "str_landed_per_min",
+                      "expression": "`str_landed_per_min`"
+                    },
+                    {
+                      "name": "td_avg_per_15min",
+                      "expression": "`td_avg_per_15min`"
+                    },
+                    {
+                      "name": "knockdown_avg",
+                      "expression": "`knockdown_avg`"
+                    },
+                    {
+                      "name": "ko_win_percentage",
+                      "expression": "`ko_win_percentage`"
+                    },
+                    {
+                      "name": "sub_win_percentage",
+                      "expression": "`sub_win_percentage`"
+                    },
+                    {
+                      "name": "audience_enjoyment_kpi",
+                      "expression": "`audience_enjoyment_kpi`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Fighter Comprehensive Stats",
+                "showTitle": true
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "full_name"
+                  },
+                  {
+                    "fieldName": "nickname"
+                  },
+                  {
+                    "fieldName": "record"
+                  },
+                  {
+                    "fieldName": "str_landed_per_min"
+                  },
+                  {
+                    "fieldName": "td_avg_per_15min"
+                  },
+                  {
+                    "fieldName": "knockdown_avg"
+                  },
+                  {
+                    "fieldName": "ko_win_percentage"
+                  },
+                  {
+                    "fieldName": "sub_win_percentage"
+                  },
+                  {
+                    "fieldName": "audience_enjoyment_kpi"
+                  }
+                ]
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 11,
+            "width": 6,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "finish_types_pie",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "fighter_id",
+                      "expression": "`fighter_id`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Finish Type Distribution",
+                "showTitle": true
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "fighter_id",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 16,
+            "width": 4,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "power_pace_scatter",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "pace_score",
+                      "expression": "`pace_score`"
+                    },
+                    {
+                      "name": "power_score",
+                      "expression": "`power_score`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Power vs Pace Analysis",
+                "showTitle": true
+              },
+              "widgetType": "scatter",
+              "encodings": {
+                "x": {
+                  "fieldName": "pace_score",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "power_score",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "full_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 4,
+            "y": 16,
+            "width": 4,
+            "height": 5
+          }
+        },
+        {
+          "widget": {
+            "name": "accuracy_metrics",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "striking_accuracy_pct",
+                      "expression": "`striking_accuracy_pct`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`is_top_14` = true"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "title": "Striking & Takedown Accuracy",
+                "showTitle": true
+              },
+              "widgetType": "line",
+              "encodings": {
+                "x": {
+                  "fieldName": "full_name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "y": {
+                  "fieldName": "striking_accuracy_pct",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 8,
+            "y": 16,
+            "width": 4,
+            "height": 5
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "global_filters",
+      "displayName": "Global Filters",
+      "layout": [
+        {
+          "widget": {
+            "name": "fighter_name_filter",
+            "queries": [
+              {
+                "name": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_full_name",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "full_name",
+                      "expression": "`full_name`"
+                    },
+                    {
+                      "name": "full_name_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Fighter Name (Search/Lookup)",
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "full_name",
+                    "queryName": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_full_name"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "stance_filter",
+            "queries": [
+              {
+                "name": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_stance",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "stance",
+                      "expression": "`stance`"
+                    },
+                    {
+                      "name": "stance_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Fighting Stance",
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "stance",
+                    "queryName": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_stance"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "nickname_filter",
+            "queries": [
+              {
+                "name": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_nickname",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "nickname",
+                      "expression": "`nickname`"
+                    },
+                    {
+                      "name": "nickname_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Fighter Nickname (Lookup)",
+                "showTitle": true
+              },
+              "widgetType": "filter-multi-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "nickname",
+                    "queryName": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_nickname"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        },
+        {
+          "widget": {
+            "name": "top14_filter",
+            "queries": [
+              {
+                "name": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_is_top_14",
+                "query": {
+                  "datasetName": "4dc92317",
+                  "fields": [
+                    {
+                      "name": "is_top_14",
+                      "expression": "`is_top_14`"
+                    },
+                    {
+                      "name": "is_top_14_associativity",
+                      "expression": "COUNT_IF(`associative_filter_predicate_group`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "title": "Elite Fighters Only",
+                "showTitle": true
+              },
+              "widgetType": "filter-single-select",
+              "encodings": {
+                "fields": [
+                  {
+                    "fieldName": "is_top_14",
+                    "queryName": "dashboards/01f16d785e9d12ff814d94950bc7d400/datasets/01f16d7881f41f63a1e12459f73d7a61_is_top_14"
+                  }
+                ]
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 0,
+            "width": 3,
+            "height": 4
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "canvasBackgroundColor": {
+        "light": "#F8F9FA",
+        "dark": "#1A1D21"
+      },
+      "widgetBackgroundColor": {
+        "light": "#FFFFFF",
+        "dark": "#242830"
+      },
+      "widgetBorderColor": {
+        "light": "#E5E7EB",
+        "dark": "#3A3F4B"
+      },
+      "fontColor": {
+        "light": "#1F2937",
+        "dark": "#F3F4F6"
+      },
+      "selectionColor": {
+        "light": "#3B82F6",
+        "dark": "#60A5FA"
+      },
+      "visualizationColors": [
+        "#EF4444",
+        "#F59E0B",
+        "#10B981",
+        "#3B82F6",
+        "#8B5CF6",
+        "#EC4899",
+        "#14B8A6",
+        "#F97316",
+        "#06B6D4",
+        "#6366F1",
+        "#84CC16",
+        "#A855F7"
+      ],
+      "widgetHeaderAlignment": "LEFT",
+      "fontFamily": "Inter",
+      "widgetPadding": 16,
+      "widgetMargin": 8,
+      "widgetCornerRadius": 12,
+      "widgetShadow": 20,
+      "fontSettings": {
+        "base": {
+          "fontFamily": "Inter",
+          "fontColor": {
+            "light": "#374151",
+            "dark": "#D1D5DB"
+          },
+          "fontSize": 13,
+          "fontWeight": 400
+        },
+        "widgetTitle": {
+          "fontFamily": "Inter",
+          "textCase": "TEXT_CASE_UNSPECIFIED",
+          "fontColor": {
+            "light": "#111827",
+            "dark": "#F9FAFB"
+          },
+          "fontSize": 16,
+          "fontWeight": 600
+        },
+        "fieldValue": {
+          "fontFamily": "Inter",
+          "fontColor": {
+            "light": "#1F2937",
+            "dark": "#E5E7EB"
+          },
+          "fontSize": 14,
+          "fontWeight": 500
+        }
+      },
+      "gridLineColor": {
+        "light": "#E5E7EB",
+        "dark": "#374151"
+      },
+      "axisLineColor": {
+        "light": "#D1D5DB",
+        "dark": "#4B5563"
+      }
+    },
+    "applyModeEnabled": false
+  }
+}
